@@ -1,0 +1,20 @@
+{% block title %}Permission{% endblock %}
+{% extends 'Layout.html.twig' %}
+{% block pagetitle %}Show Permission</span>{% endblock %}
+{% block content %}
+{% include 'FlashMessages.html.twig' %}
+{% for key, permission in permissions %}
+<div class="row">
+    <div class="col-sm-4 ">        
+        <h3 style="color:#396DAC;">{{ key }}</h3>        
+    </div>
+    <div class="col-sm-8">
+        {% for action in permission %}
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-info" style="background-color: #396DAC; color:#fff;">{{ action }}</li>
+        </ul>        
+        {% endfor %}<br><br>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

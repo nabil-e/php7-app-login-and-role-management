@@ -1,0 +1,7 @@
+{% block title %}Admin{% endblock %}
+{% extends 'Layout.html.twig' %}
+{% block pagetitle %}Admin Panel{% endblock %}
+{% block content %}
+{% include 'FlashMessages.html.twig' %}
+    <h4 style="color:#ffffff" class='mt-5'>Welcome to the Admin Panel <span style="color:#396DAC">{{ user.nickname | upper  }}</span>.<br><br> You have the <span style="color:#396DAC">{{ user.roleName }}</span> role.</h4>
+{% endblock %}

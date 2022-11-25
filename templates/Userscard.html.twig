@@ -1,0 +1,97 @@
+{% block title %}Users card{% endblock %}
+{% extends 'Layout.html.twig' %}
+{% block pagetitle %}Users Card{% endblock %}
+{% block content %}
+{% for user in users %}
+<div class="row gutters-sm">
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle"
+                        width="150">
+                    <div class="mt-3">
+                        <h4>{{ user.firstName }} {{ user.lastName }}</h4>
+                        <p class="text-secondary mb-1">User ID</p>
+                        <p class="flex flex-wrap text-muted font-size-sm">{{ user.id }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Nickname</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{ user.nickname }}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Email</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{ user.email }}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Role</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{ user.roleName }}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Creation date</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{ user.creationDate }}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Updated date</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{ user.updateDate }}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Actif</h6>
+                    </div>
+                    <div class="col-sm-9 form-check form-switch">
+                        {% if ( user.isActive ) %}
+                        <input class="form-check-input" type="checkbox" role="isActive" id="isActive" checked disabled>
+                        {% else %}
+                        <input class="form-check-input" type="checkbox" role="isActive" id="isActive" disabled>
+                        {% endif %}
+
+                    </div>
+                </div>
+                <hr>
+                <div class="col-sm-12">
+                    <div class="col-sm-12">
+                        <input type="hidden" name="token" value="{{ get_token('editUser') }}">
+                        <a class="btn" target="__blank" href="/admin/edituser/{{user.id}}"
+                            style="background-color: #396DAC; color:#6AC0B9;">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

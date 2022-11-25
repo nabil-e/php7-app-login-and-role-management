@@ -1,0 +1,14 @@
+{% extends 'Layout.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <ol style="color:#FFFFFF">
+        {% for submission in submissions %}
+            <li>
+                <a href="{{ submission.url|e('html_attr') }}">{{ submission.title }}</a>
+                <small style="color:#FFFFFF">submitted by {{ submission.author | upper }}</small>
+            </li>
+        {% endfor %}
+    </ol>
+{% endblock %}

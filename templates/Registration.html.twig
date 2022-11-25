@@ -1,0 +1,42 @@
+{% extends 'Layout.html.twig' %}
+{% block title %}Register{% endblock %}
+{% block pagetitle %}Create a User{% endblock %}
+{% block content %}
+{% include 'FlashMessages.html.twig' %}
+<form class="col g-1 p-5" method="post" action="">
+    <div class="form-floating mb-3 col-md-4">
+        <input class="form-control" type="text" name="lastName" id="lastName" placeholder='Nom'>
+        <label for="lastName">Nom</label>
+    </div>
+    <div class="form-floating mb-3 col-md-4">
+        <input class="form-control" type="text" name="firstName" id="firstName" placeholder='Prénom'>
+        <label class="form-label" for="firstName">Prénom</label>
+    </div>
+    <div class="form-floating col-md-4">
+        <input class="form-control" type="text" name="nickname" id="nickname" placeholder='Pseudo'><br>
+        <label class="form-label" for="nickname">Pseudo</label>
+    </div>
+    <div class="form-floating mb-3 col-md-4">
+        <input class="form-control" type="email" name="email" id="email" placeholder='Email'>
+        <label class="form-label" for="email">Email</label>
+    </div>
+    <div class="form-floating mb-2 col-md-4">
+        <input class="form-control" type="password" name="password" id="password" placeholder='Password'><br>
+        <label class="form-label" for="password">Password</label>
+    </div>
+    <div class="col-md-4">
+        <select class="form-select-lg " name="roleName" id="roleName" required>
+            <option value='' selected>Select a Role</option>
+            {% for role in roles %}
+            <option value="{{role.roleName}}">{{role.roleName}}</option>
+            {% endfor %}
+    </div>
+    <div class="col-md-4">
+        <input class="form-control" type="hidden" name="isActive" id="isActive"><br>
+    </div>
+    <div class="col-md-4">
+        <input type="hidden" name="token" value="{{ get_token('registration') }}">
+        <input class="btn mt-3" style="background-color:#396DAC; color:#fff" type="submit" value="Register">
+    </div>
+</form>
+{% endblock %}

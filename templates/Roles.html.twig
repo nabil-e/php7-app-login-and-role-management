@@ -1,0 +1,14 @@
+{% extends 'Layout.html.twig' %}
+
+{% block title %}Roles{% endblock %}
+{% block pagetitle %}Create a Role{% endblock %}
+{% block content %}
+<form class="mt-5" action='' method='POST'>
+    <div class="form-group form-floating col-md-4">
+        <input type="text" class="form-control" id="roleName" name="roleName" placeholder="Role">
+        <label for="roleName">Role</label>
+    </div>
+    <input type="hidden" name="token" value="{{ get_token('registration') }}">
+    <button type="submit" class="btn mt-3" style="background-color:#396DAC; color:#fff">Submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'Layout.html.twig' %}
+
+{% block content %}
+
+
+<form class="col g-1 p-5" method="post" action="">
+    <div class="form-floating mb-3 col-md-4">
+        <input class="form-control" type="text" name="title" id="submission-title" placeholder='Title'>
+        <label class="form-label" for="submission-title">Title</label>
+    </div>
+    <div class="form-floating col-md-4">
+        <input class="form-control" type="text" name="url" id="url" placeholder='URL'><br>
+        <label class="form-label" for="url">URL</label>
+    </div>
+    <div>
+        <input type="hidden" name="token" value="{{ get_token('submission') }}"><br>
+        <input class="btn" style="background-color:#396DAC; color:#fff" type="submit" value="Submit">
+    </div>
+</form>
+
+{% endblock %}

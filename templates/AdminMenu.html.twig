@@ -1,0 +1,65 @@
+<nav class="main-menu">
+  <ul>
+    <li>
+      <a href="/admin">
+        <i class="bi bi-house-door-fill fa-2x"></i>
+        <span class="nav-text">
+          Admin
+        </span>
+      </a>
+
+    </li>
+    <li class="has-subnav">
+      <a href="/admin/userscard">
+        <i class="bi bi-person-video2 fa-2x"></i>
+        <span class="nav-text">
+          Users card
+        </span>
+      </a>
+
+    </li>
+    <li class="has-subnav">
+      <a href="/admin/userstable">
+        <i class="bi bi-table fa-2x"></i>
+        <span class="nav-text">
+          Users table
+        </span>
+      </a>
+
+    </li>
+    <li class="has-subnav">
+      <a href="/admin/register">
+        <i class="bi bi-person-plus-fill fa-2x"></i>
+        <span class="nav-text">
+          Create a User
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="/admin/roles">
+        <i class="bi bi-lock-fill fa-2x"></i>
+        <span class="nav-text">
+          Create a Role
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="/admin/permissions">
+        <i class="bi bi-key-fill fa-2x"></i>
+        <span class="nav-text">
+          View Permissions
+        </span>
+      </a>
+    </li>
+    <li class="has-subnav">
+      <a href="/admin/edituser/{{ session.get('userId') }}">
+      <i class="bi bi-person-fill fa-2"></i>
+        <span class="nav-text">
+          {{ session.get('nickname') | upper }} | {{ session.get('role') }}
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<style>
+</style>

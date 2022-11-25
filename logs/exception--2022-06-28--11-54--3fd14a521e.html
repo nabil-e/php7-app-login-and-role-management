@@ -1,0 +1,701 @@
+<!DOCTYPE html><!-- "' --></textarea></script></style></pre></xmp></a></iframe></noembed></noframes></noscript></option></select></template></title></table></p></code>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="generator" content="Tracy by Nette Framework">
+
+	<title>Warning: is_file(): open_basedir restriction in effect. File(/admin.html.twig) is not within the allowed path(s): (/appdata/sites/WinYum:/appdata/runtime/WinYum)</title>
+	<!-- in /appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php:273 -->
+
+	<style class="tracy-debug">
+	tracy-div:not(a b),tracy-div:not(a b) *{font: inherit;line-height: inherit;color: inherit;background: transparent;margin: 0;padding: 0;border: none;text-align: inherit;list-style: inherit;opacity: 1;border-radius: 0;box-shadow: none;text-shadow: none;box-sizing: border-box;text-decoration: none;text-transform: inherit;white-space: inherit;float: none;clear: none;max-width: initial;min-width: initial;max-height: initial;min-height: initial}tracy-div:not(a b) *:hover{color: inherit;background: transparent}tracy-div:not(a b) *:not(svg):not(img):not(table){width: initial;height: initial}tracy-div:not(a b):before,tracy-div:not(a b):after,tracy-div:not(a b) *:before,tracy-div:not(a b) *:after{all: unset}tracy-div:not(a b) b,tracy-div:not(a b) strong{font-weight: bold}tracy-div:not(a b) small{font-size: smaller}tracy-div:not(a b) i,tracy-div:not(a b) em{font-style: italic}tracy-div:not(a b) big{font-size: larger}tracy-div:not(a b) small,tracy-div:not(a b) sub,tracy-div:not(a b) sup{font-size: smaller}tracy-div:not(a b) ins{text-decoration: underline}tracy-div:not(a b) del{text-decoration: line-through}tracy-div:not(a b) table{border-collapse: collapse}tracy-div:not(a b) pre{font-family: monospace;white-space: pre}tracy-div:not(a b) code,tracy-div:not(a b) kbd,tracy-div:not(a b) samp{font-family: monospace}tracy-div:not(a b) input{background-color: white;padding: 1px;border: 1px solid}tracy-div:not(a b) textarea{background-color: white;border: 1px solid;padding: 2px;white-space: pre-wrap}tracy-div:not(a b) select{border: 1px solid;white-space: pre}tracy-div:not(a b) article,tracy-div:not(a b) aside,tracy-div:not(a b) details,tracy-div:not(a b) div,tracy-div:not(a b) figcaption,tracy-div:not(a b) footer,tracy-div:not(a b) form,tracy-div:not(a b) header,tracy-div:not(a b) hgroup,tracy-div:not(a b) main,tracy-div:not(a b) nav,tracy-div:not(a b) section,tracy-div:not(a b) summary,tracy-div:not(a b) pre,tracy-div:not(a b) p,tracy-div:not(a b) dl,tracy-div:not(a b) dd,tracy-div:not(a b) dt,tracy-div:not(a b) blockquote,tracy-div:not(a b) figure,tracy-div:not(a b) address,tracy-div:not(a b) h1,tracy-div:not(a b) h2,tracy-div:not(a b) h3,tracy-div:not(a b) h4,tracy-div:not(a b) h5,tracy-div:not(a b) h6,tracy-div:not(a b) ul,tracy-div:not(a b) ol,tracy-div:not(a b) li,tracy-div:not(a b) hr{display: block}tracy-div:not(a b) a,tracy-div:not(a b) b,tracy-div:not(a b) big,tracy-div:not(a b) code,tracy-div:not(a b) em,tracy-div:not(a b) i,tracy-div:not(a b) small,tracy-div:not(a b) span,tracy-div:not(a b) strong{display: inline}tracy-div:not(a b) table{display: table}tracy-div:not(a b) tr{display: table-row}tracy-div:not(a b) col{display: table-column}tracy-div:not(a b) colgroup{display: table-column-group}tracy-div:not(a b) tbody{display: table-row-group}tracy-div:not(a b) thead{display: table-header-group}tracy-div:not(a b) tfoot{display: table-footer-group}tracy-div:not(a b) td{display: table-cell}tracy-div:not(a b) th{display: table-cell}tracy-div:not(a b) .tracy-sortable>:first-child>tr:first-child>*{position: relative}tracy-div:not(a b) .tracy-sortable>:first-child>tr:first-child>*:hover:before{position: absolute;right: .3em;content:"\21C5";opacity: .4;font-weight: normal}tracy-div:not(a b) .tracy-dump div{padding-left: 3ex}tracy-div:not(a b) .tracy-dump div div{border-left: 1px solid rgba(0,0,0,.1);margin-left: .5ex}tracy-div:not(a b) .tracy-dump div div:hover{border-left-color: rgba(0,0,0,.25)}tracy-div:not(a b) .tracy-dump{background: #FDF5CE;padding: .4em .7em;border: 1px dotted silver;overflow: auto}tracy-div:not(a b) table .tracy-dump.tracy-dump{padding: 0;margin: 0;border: none}tracy-div:not(a b) .tracy-dump-location{color: gray;font-size: 80%;text-decoration: none;background: none;opacity: .5;float: right;cursor: pointer}tracy-div:not(a b) .tracy-dump-location:hover,tracy-div:not(a b) .tracy-dump-location:focus{color: gray;background: none;opacity: 1}tracy-div:not(a b) .tracy-dump-array,tracy-div:not(a b) .tracy-dump-object{color: #C22}tracy-div:not(a b) .tracy-dump-string{color: #35D;white-space: break-spaces}tracy-div:not(a b) div.tracy-dump-string{position: relative;padding-left: 3.5ex}tracy-div:not(a b) .tracy-dump-lq{margin-left: calc(-1ex - 1px)}tracy-div:not(a b) div.tracy-dump-string:before{content:'';position: absolute;left: calc(3ex - 1px);top: 1.5em;bottom: 0;border-left: 1px solid rgba(0,0,0,.1)}tracy-div:not(a b) .tracy-dump-virtual span,tracy-div:not(a b) .tracy-dump-dynamic span,tracy-div:not(a b) .tracy-dump-string span{color: rgba(0,0,0,0.5)}tracy-div:not(a b) .tracy-dump-virtual i,tracy-div:not(a b) .tracy-dump-dynamic i,tracy-div:not(a b) .tracy-dump-string i{font-size: 80%;font-style: normal;color: rgba(0,0,0,0.5);user-select: none}tracy-div:not(a b) .tracy-dump-number{color: #090}tracy-div:not(a b) .tracy-dump-null,tracy-div:not(a b) .tracy-dump-bool{color: #850}tracy-div:not(a b) .tracy-dump-virtual{font-style: italic}tracy-div:not(a b) .tracy-dump-public::after{content:' pub'}tracy-div:not(a b) .tracy-dump-protected::after{content:' pro'}tracy-div:not(a b) .tracy-dump-private::after{content:' pri'}tracy-div:not(a b) .tracy-dump-public::after,tracy-div:not(a b) .tracy-dump-protected::after,tracy-div:not(a b) .tracy-dump-private::after,tracy-div:not(a b) .tracy-dump-hash{font-size: 85%;color: rgba(0,0,0,0.5)}tracy-div:not(a b) .tracy-dump-indent{display: none}tracy-div:not(a b) .tracy-dump-highlight{background: #C22;color: white;border-radius: 2px;padding: 0 2px;margin: 0 -2px}tracy-div:not(a b) span[data-tracy-href]{border-bottom: 1px dotted rgba(0,0,0,.2)}tracy-div:not(a b) .tracy-toggle:after{content:'';display: inline-block;vertical-align: middle;line-height: 0;border-top: .6ex solid;border-right: .6ex solid transparent;border-left: .6ex solid transparent;transform: scale(1,1.5);margin: 0 .2ex 0 .7ex;transition: .1s transform;opacity: .5}tracy-div:not(a b) .tracy-toggle.tracy-collapsed:after{transform: rotate(-90deg) scale(1,1.5) translate(.1ex,0)}tracy-div:not(a b) .tracy-tab-label{user-select: none}tracy-div:not(a b) .tracy-tab-panel:not(.tracy-active){display: none}:root{--tracy-space: 16px}html,body{display: block;overflow: visible}#tracy-bs{font: 9pt/1.5 Verdana,sans-serif;background: white;color: #333;position: absolute;z-index: 20000;left: 0;top: 0;width: 100%;text-align: left}#tracy-bs a{text-decoration: none;color: #328ADC;padding: 0 4px;margin: 0 -4px}#tracy-bs a+a{margin-left: 0}#tracy-bs a:hover,#tracy-bs a:focus{color: #085AA3}#tracy-bs-toggle{position: absolute;right: .5em;top: .5em;text-decoration: none;background: #CD1818;color: white!important;padding: 3px}#tracy-bs-toggle.tracy-collapsed{position: fixed}.tracy-bs-main{display: flex;flex-direction: column;padding-bottom: 80vh}.tracy-bs-main.tracy-collapsed{display: none}#tracy-bs p,#tracy-bs table,#tracy-bs pre,#tracy-bs h1,#tracy-bs h2,#tracy-bs h3{margin: 0 0 var(--tracy-space)}#tracy-bs h1{font-size: 15pt;font-weight: normal;text-shadow: 1px 1px 2px rgba(0,0,0,.3)}#tracy-bs h1 span{white-space: pre-wrap}#tracy-bs h2{font-size: 14pt;font-weight: normal;margin-top: var(--tracy-space)}#tracy-bs h3{font-size: 10pt;font-weight: bold}#tracy-bs pre,#tracy-bs code,#tracy-bs table{font: 9pt/1.5 Consolas,monospace!important}#tracy-bs pre,#tracy-bs table{background: #FDF5CE;padding: .4em .7em;border: 2px solid #ffffffa6;box-shadow: 1px 2px 6px #00000005;overflow: auto}#tracy-bs table pre{padding: 0;margin: 0;border: none;box-shadow: none}#tracy-bs table{border-collapse: collapse;width: 100%}#tracy-bs td,#tracy-bs th{vertical-align: top;text-align: left;padding: 2px 6px;border: 1px solid #e6dfbf}#tracy-bs th{font-weight: bold}#tracy-bs tr>:first-child{width: 20%}#tracy-bs tr:nth-child(2n),#tracy-bs tr:nth-child(2n) pre{background-color: #F7F0CB}#tracy-bs .tracy-footer--sticky{position: fixed;width: 100%;bottom: 0}#tracy-bs footer ul{font-size: 7pt;padding: var(--tracy-space);margin: var(--tracy-space) 0 0;color: #777;background: #F6F5F3;border-top: 1px solid #DDD;list-style: none}#tracy-bs .tracy-footer-logo{position: relative}#tracy-bs .tracy-footer-logo a{position: absolute;bottom: 0;right: 0;width: 100px;height: 50px;background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAUBAMAAAD/1DctAAAAMFBMVEWupZzj39rEvbTy8O3X0sz9/PvGwLu8tavQysHq6OS0rKP5+Pbd2dT29fPMxbzPx8DKErMJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGUlEQVQoFX3TQWgTQRQA0MWLIJJDYehBTykhG5ERTx56K1u8eEhCYtomE7x5L4iLh0ViF7egewuFFqSIYE6hIHsIYQ6CQSg9CDKn4QsNCRlB59C74J/ZNHW1+An5+bOPyf6/s46oz2P+A0yIeZZ2ieEHi6TOnLKTxvWq+b52mxlVO3xnM1s7xLX1504XQH65OnW2dBqn7cCkYsFsfYsWpyY/2salmFTpEyzeR8zosYqMdiPDXdyU52K1wgEa/SjGpdEwUAxqvRfckQCDOyFearsEHe2grvkh/cFAHKvdtI3lcVceKQIOFpv+FOZaNPQBwJZLPp+hfrvT5JZXaUFsR8zqQc9qSgAharkfS5M/5F6nGJJAtXq/eLr3ucZpHccSxOOIPaQhtHohpCH2Xu6rLmQ0djnr4/+J3C6v+AW8/XWYxwYNdlhWj/P5fPSTQwVr0T9lGxdaBCqErNZaqYnEwbkjEB3NasGF3lPdrHa1nnxNOMgj0+neePUPjd2v/qVvUv29ifvc19huQ48qwXShy/9o8o3OSk0cs37mOFd0Ydgvsf/oZEnPVtggfd66lORn9mDyyzXU13SRtH2L6aR5T/snGAcZPfAXz5J1YlJWBEuxdMYqQecpBrlM49xAbmqyHA+xlA1FxBtqT2xmJoNXZlIt74ZBLeJ9ZGDqByNI7p543idzJ23vXEv7IgnsxiS+eNtwNbFdLq7+Bi4wQ0I4SVb9AAAAAElFTkSuQmCC') no-repeat;opacity: .6;padding: 0;margin: 0}#tracy-bs .tracy-footer-logo a:hover,#tracy-bs .tracy-footer-logo a:focus{opacity: 1;transition: opacity 0.1s}#tracy-bs .tracy-section{padding-left: calc(1.5 * var(--tracy-space));padding-right: calc(1.5 * var(--tracy-space))}#tracy-bs .tracy-section-panel{background: #F4F3F1;padding: var(--tracy-space) var(--tracy-space) 0;margin: 0 0 var(--tracy-space);border-radius: 8px;box-shadow: inset 1px 1px 0px 0 #00000005;overflow: hidden}#tracy-bs .outer,#tracy-bs .tracy-pane{overflow: auto}#tracy-bs.tracy-mac .tracy-pane{padding-bottom: 12px}#tracy-bs .tracy-section--error{background: #CD1818;color: white;font-size: 13pt;padding-top: var(--tracy-space)}#tracy-bs .tracy-section--error h1{color: white}#tracy-bs .tracy-section--error::selection,#tracy-bs .tracy-section--error ::selection{color: black!important;background: #FDF5CE!important}#tracy-bs .tracy-section--error a{color: #ffefa1!important}#tracy-bs .tracy-section--error span span{font-size: 80%;color: rgba(255,255,255,0.5);text-shadow: none}#tracy-bs .tracy-section--error a.tracy-action{color: white!important;opacity: 0;font-size: .7em;border-bottom: none!important}#tracy-bs .tracy-section--error:hover a.tracy-action{opacity: .6}#tracy-bs .tracy-section--error a.tracy-action:hover{opacity: 1}#tracy-bs .tracy-section--error i{color: #ffefa1;font-style: normal}#tracy-bs pre.tracy-code>div{min-width: 100%;float: left;white-space: pre}#tracy-bs .tracy-line-highlight{background: #CD1818;color: white;font-weight: bold;font-style: normal;display: block;padding: 0 1ch;margin: 0 -1ch}#tracy-bs .tracy-column-highlight{display: inline-block;backdrop-filter: grayscale(1);margin: 0 -1px;padding: 0 1px}#tracy-bs .tracy-line{color: #9F9C7F;font-weight: normal;font-style: normal}#tracy-bs a.tracy-editor{color: inherit;border-bottom: 1px dotted rgba(0,0,0,.3);border-radius: 3px}#tracy-bs a.tracy-editor:hover{background: #0001}#tracy-bs span[data-tracy-href]{border-bottom: 1px dotted rgba(0,0,0,.3)}#tracy-bs .tracy-dump-whitespace{color: #0003}#tracy-bs .tracy-caused{float: right;padding: .3em calc(1.5 * var(--tracy-space));background: #df8075;border-radius: 0 0 0 8px;white-space: nowrap}#tracy-bs .tracy-caused a{color: white}#tracy-bs .tracy-callstack{display: grid;grid-template-columns: max-content 1fr;margin-bottom: calc(.5 * var(--tracy-space))}#tracy-bs .tracy-callstack-file{text-align: right;padding-right: var(--tracy-space);white-space: nowrap;height: calc(1.5 * var(--tracy-space))}#tracy-bs .tracy-callstack-callee{white-space: nowrap;height: calc(1.5 * var(--tracy-space))}#tracy-bs .tracy-callstack-additional{grid-column-start: 1;grid-column-end: 3}#tracy-bs .tracy-callstack-args tr:first-child>*{position: relative}#tracy-bs .tracy-callstack-args tr:first-child td:before{position: absolute;right: .3em;content:'may not be true';opacity: .4}#tracy-bs .tracy-panel-fadein{animation: tracy-panel-fadein .12s ease}@keyframes tracy-panel-fadein{0%{opacity: 0}}#tracy-bs .tracy-section--causedby{flex-direction: column;padding: 0}#tracy-bs .tracy-section--causedby:not(.tracy-collapsed){display: flex}#tracy-bs .tracy-section--causedby .tracy-section--error{background: #cd1818a6}#tracy-bs .tracy-section--error+.tracy-section--stack{margin-top: calc(1.5 * var(--tracy-space))}#tracy-bs .tracy-tab-bar{display: flex;list-style: none;padding-left: 0;margin: 0;width: 100%;font-size: 110%}#tracy-bs .tracy-tab-bar>*:not(:first-child){margin-left: var(--tracy-space)}#tracy-bs .tracy-tab-bar a{display: block;padding: calc(.5 * var(--tracy-space)) var(--tracy-space);margin: 0;height: 100%;box-sizing: border-box;border-radius: 5px 5px 0 0;text-decoration: none;transition: all 0.1s}#tracy-bs .tracy-tab-bar>.tracy-active a{background: white}#tracy-bs .tracy-tab-panel{border-top: 2px solid white;padding-top: var(--tracy-space);overflow: auto}.tracy-collapsed{display: none}.tracy-toggle.tracy-collapsed{display: inline}.tracy-toggle{cursor: pointer;user-select: none;white-space: nowrap}.tracy-toggle:after{content:'';display: inline-block;vertical-align: middle;line-height: 0;border-top: .6ex solid;border-right: .6ex solid transparent;border-left: .6ex solid transparent;transform: scale(1,1.5);margin: 0 .2ex 0 .7ex;transition: .1s transform;opacity: .5}.tracy-toggle.tracy-collapsed:after{transform: rotate(-90deg) scale(1,1.5) translate(.1ex,0)}.tracy-sortable>:first-child>tr:first-child>*{position: relative}.tracy-sortable>:first-child>tr:first-child>*:hover:before{position: absolute;right: .3em;content:"\21C5";opacity: .4;font-weight: normal}.tracy-tab-label{user-select: none}.tracy-tab-panel:not(.tracy-active){display: none}.tracy-dump.tracy-light{text-align: left;color: #444;background: #fdf9e2;border-radius: 4px;padding: 1em;margin: 1em 0;word-break: break-all;white-space: pre-wrap}.tracy-dump.tracy-light div{padding-left: 2.5ex}.tracy-dump.tracy-light div div{border-left: 1px solid rgba(0,0,0,.1);margin-left: .5ex}.tracy-dump.tracy-light div div:hover{border-left-color: rgba(0,0,0,.25)}.tracy-light .tracy-dump-location{color: gray;font-size: 80%;text-decoration: none;background: none;opacity: .5;float: right;cursor: pointer}.tracy-light .tracy-dump-location:hover,.tracy-light .tracy-dump-location:focus{opacity: 1}.tracy-light .tracy-dump-array,.tracy-light .tracy-dump-object{color: #C22;user-select: text}.tracy-light .tracy-dump-string{color: #35D;white-space: break-spaces}.tracy-light div.tracy-dump-string{position: relative;padding-left: 3.5ex}.tracy-light .tracy-dump-lq{margin-left: calc(-1ex - 1px)}.tracy-light div.tracy-dump-string:before{content:'';position: absolute;left: calc(3ex - 1px);top: 1.5em;bottom: 0;border-left: 1px solid rgba(0,0,0,.1)}.tracy-light .tracy-dump-virtual span,.tracy-light .tracy-dump-dynamic span,.tracy-light .tracy-dump-string span{color: rgba(0,0,0,0.5)}.tracy-light .tracy-dump-virtual i,.tracy-light .tracy-dump-dynamic i,.tracy-light .tracy-dump-string i{font-size: 80%;font-style: normal;color: rgba(0,0,0,0.5);user-select: none}.tracy-light .tracy-dump-number{color: #090}.tracy-light .tracy-dump-null,.tracy-light .tracy-dump-bool{color: #850}.tracy-light .tracy-dump-virtual{font-style: italic}.tracy-light .tracy-dump-public::after{content:' pub'}.tracy-light .tracy-dump-protected::after{content:' pro'}.tracy-light .tracy-dump-private::after{content:' pri'}.tracy-light .tracy-dump-public::after,.tracy-light .tracy-dump-protected::after,.tracy-light .tracy-dump-private::after,.tracy-light .tracy-dump-hash{font-size: 85%;color: rgba(0,0,0,0.35)}.tracy-light .tracy-dump-indent{display: none}.tracy-light .tracy-dump-highlight{background: #C22;color: white;border-radius: 2px;padding: 0 2px;margin: 0 -2px}span[data-tracy-href]{border-bottom: 1px dotted rgba(0,0,0,.2)}.tracy-light .tracy-dump-flash{animation: tracy-dump-flash .2s ease}@keyframes tracy-dump-flash{0%{background: #c0c0c033}}	</style>
+</head>
+
+
+<body>
+<tracy-div id="tracy-bs" itemscope>
+	<a id="tracy-bs-toggle" href="#" class="tracy-toggle"></a>
+	<div class="tracy-bs-main">
+<section class="tracy-section tracy-section--error">
+	<p>Warning</p>
+
+	<h1><span>is_file(): open_basedir restriction in effect. File(/admin.html.twig) is not within the allowed path(s): (/appdata/sites/WinYum:/appdata/runtime/WinYum)</span>
+	</h1>
+</section>
+
+
+
+
+<section class="tracy-section">
+	<h2 class="tracy-section-label"><a href="#" data-tracy-ref="^+" class="tracy-toggle">Source file</a></h2>
+
+	<div class="tracy-section-panel">
+		<p><b>File:</b> <a href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FBlueScreen%2FBlueScreen.php&amp;line=273&amp;search=&amp;replace=" title="/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php:273" class="tracy-editor">.../vendor/tracy/tracy/src/Tracy/BlueScreen/<b>BlueScreen.php</b>:273</a></p>
+		<pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FBlueScreen%2FBlueScreen.php&amp;line=273&amp;search=&amp;replace=" class='tracy-code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='tracy-line'>263:</span>                    [</span><span style="color: #000">$content</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$line</span><span style="color: #D24; font-weight: bold">] = </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">generateNewFileContents</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>264:</span>                    </span><span style="color: #000">$actions</span><span style="color: #D24; font-weight: bold">[] = [
+<span class='tracy-line'>265:</span>                        </span><span style="color: #080">'link' </span><span style="color: #D24; font-weight: bold">=&gt; </span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">editorUri</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$line</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'create'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">''</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$content</span><span style="color: #D24; font-weight: bold">),
+<span class='tracy-line'>266:</span>                        </span><span style="color: #080">'label' </span><span style="color: #D24; font-weight: bold">=&gt; </span><span style="color: #080">'create class'</span><span style="color: #D24; font-weight: bold">,
+<span class='tracy-line'>267:</span>                    ];
+<span class='tracy-line'>268:</span>                }
+<span class='tracy-line'>269:</span>            }
+<span class='tracy-line'>270:</span>    
+<span class='tracy-line'>271:</span>            if (</span><span style="color: #000">preg_match</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'# ([\'"])((?:/|[a-z]:[/\\\\])\w[^\'"]+\.\w{2,5})\1#i'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$ex</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getMessage</span><span style="color: #D24; font-weight: bold">(), </span><span style="color: #000">$m</span><span style="color: #D24; font-weight: bold">)) {
+<span class='tracy-line'>272:</span>                </span><span style="color: #000">$file </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$m</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">2</span><span style="color: #D24; font-weight: bold">];
+<span class='tracy-line-highlight'>273:                if (is_file($file)) {
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='tracy-line'>274:</span>                    </span><span style="color: #000">$label </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #080">'open'</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line'>275:</span>                    </span><span style="color: #000">$content </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #080">''</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line'>276:</span>                    </span><span style="color: #000">$line </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line'>277:</span>                } else {
+</span></span></code></div></pre>
+	</div>
+</section>
+
+<section class="tracy-section">
+	<h2 class="tracy-section-label"><a href="#" data-tracy-ref="^+" class="tracy-toggle">Call stack</a></h2>
+
+	<div class="tracy-section-panel">
+	<div class="tracy-callstack">
+
+		<div class="tracy-callstack-file">
+			<a href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FBlueScreen%2FBlueScreen.php&amp;line=273&amp;search=&amp;replace=" title="/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php:273" class="tracy-editor">.../vendor/tracy/tracy/src/Tracy/BlueScreen/<b>BlueScreen.php</b>:273</a>
+		</div>
+
+		<div class="tracy-callstack-callee">
+			<a href="#" data-tracy-ref="^div + div" class="tracy-toggle tracy-collapsed"><b>is_file</b> (...)</a>
+		</div>
+
+		<div class="tracy-callstack-additional tracy-collapsed">
+			<pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FBlueScreen%2FBlueScreen.php&amp;line=273&amp;search=&amp;replace=" class='tracy-code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='tracy-line'>263:</span>                    [</span><span style="color: #000">$content</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$line</span><span style="color: #D24; font-weight: bold">] = </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">generateNewFileContents</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>264:</span>                    </span><span style="color: #000">$actions</span><span style="color: #D24; font-weight: bold">[] = [
+<span class='tracy-line'>265:</span>                        </span><span style="color: #080">'link' </span><span style="color: #D24; font-weight: bold">=&gt; </span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">editorUri</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$line</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'create'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">''</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$content</span><span style="color: #D24; font-weight: bold">),
+<span class='tracy-line'>266:</span>                        </span><span style="color: #080">'label' </span><span style="color: #D24; font-weight: bold">=&gt; </span><span style="color: #080">'create class'</span><span style="color: #D24; font-weight: bold">,
+<span class='tracy-line'>267:</span>                    ];
+<span class='tracy-line'>268:</span>                }
+<span class='tracy-line'>269:</span>            }
+<span class='tracy-line'>270:</span>    
+<span class='tracy-line'>271:</span>            if (</span><span style="color: #000">preg_match</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'# ([\'"])((?:/|[a-z]:[/\\\\])\w[^\'"]+\.\w{2,5})\1#i'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$ex</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getMessage</span><span style="color: #D24; font-weight: bold">(), </span><span style="color: #000">$m</span><span style="color: #D24; font-weight: bold">)) {
+<span class='tracy-line'>272:</span>                </span><span style="color: #000">$file </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$m</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">2</span><span style="color: #D24; font-weight: bold">];
+<span class='tracy-line-highlight'>273:                if (is_file($file)) {
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='tracy-line'>274:</span>                    </span><span style="color: #000">$label </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #080">'open'</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line'>275:</span>                    </span><span style="color: #000">$content </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #080">''</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line'>276:</span>                    </span><span style="color: #000">$line </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line'>277:</span>                } else {
+</span></span></code></div></pre>
+
+			<table class="tracy-callstack-args">
+<tr><th>$filename</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="16 characters"><span>'</span>/admin.html.twig<span>'</span></span></pre>
+</td></tr>
+			</table>
+		</div>
+
+		<div class="tracy-callstack-file">
+			<a href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FBlueScreen%2FBlueScreen.php&amp;line=196&amp;search=&amp;replace=" title="/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php:196" class="tracy-editor">.../vendor/tracy/tracy/src/Tracy/BlueScreen/<b>BlueScreen.php</b>:196</a>
+		</div>
+
+		<div class="tracy-callstack-callee">
+			<a href="#" data-tracy-ref="^div + div" class="tracy-toggle tracy-collapsed">Tracy\BlueScreen::<b>renderActions</b> (...)</a>
+		</div>
+
+		<div class="tracy-callstack-additional tracy-collapsed">
+			<pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FBlueScreen%2FBlueScreen.php&amp;line=196&amp;search=&amp;replace=" class='tracy-code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='tracy-line'>186:</span>                </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../assets/reset.css'</span><span style="color: #D24; font-weight: bold">,
+<span class='tracy-line'>187:</span>                </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/assets/bluescreen.css'</span><span style="color: #D24; font-weight: bold">,
+<span class='tracy-line'>188:</span>                </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../assets/toggle.css'</span><span style="color: #D24; font-weight: bold">,
+<span class='tracy-line'>189:</span>                </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../assets/table-sort.css'</span><span style="color: #D24; font-weight: bold">,
+<span class='tracy-line'>190:</span>                </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../assets/tabs.css'</span><span style="color: #D24; font-weight: bold">,
+<span class='tracy-line'>191:</span>                </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../Dumper/assets/dumper-light.css'</span><span style="color: #D24; font-weight: bold">,
+<span class='tracy-line'>192:</span>            ], </span><span style="color: #000">Debugger</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$customCssFiles</span><span style="color: #D24; font-weight: bold">));
+<span class='tracy-line'>193:</span>            </span><span style="color: #000">$css </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">minifyCss</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">implode</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">''</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$css</span><span style="color: #D24; font-weight: bold">));
+<span class='tracy-line'>194:</span>    
+<span class='tracy-line'>195:</span>            </span><span style="color: #000">$nonce </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$toScreen </span><span style="color: #D24; font-weight: bold">? </span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getNonce</span><span style="color: #D24; font-weight: bold">() : </span><span style="color: #000">null</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line-highlight'>196:            $actions = $toScreen ? $this-&gt;renderActions($exception) : [];
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='tracy-line'>197:</span>    
+<span class='tracy-line'>198:</span>            require </span><span style="color: #000">$template</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line'>199:</span>        }
+<span class='tracy-line'>200:</span>    
+</span></span></code></div></pre>
+
+			<table class="tracy-callstack-args">
+<tr><th>$ex</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"ref":145}'></pre>
+</td></tr>
+			</table>
+		</div>
+
+		<div class="tracy-callstack-file">
+			<a href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FBlueScreen%2FBlueScreen.php&amp;line=127&amp;search=&amp;replace=" title="/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php:127" class="tracy-editor">.../vendor/tracy/tracy/src/Tracy/BlueScreen/<b>BlueScreen.php</b>:127</a>
+		</div>
+
+		<div class="tracy-callstack-callee">
+			<a href="#" data-tracy-ref="^div + div" class="tracy-toggle tracy-collapsed">Tracy\BlueScreen::<b>renderTemplate</b> (...)</a>
+		</div>
+
+		<div class="tracy-callstack-additional tracy-collapsed">
+			<pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FBlueScreen%2FBlueScreen.php&amp;line=127&amp;search=&amp;replace=" class='tracy-code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='tracy-line'>117:</span>    
+<span class='tracy-line'>118:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='tracy-line'>119:</span>         * Renders blue screen.
+<span class='tracy-line'>120:</span>         */
+<span class='tracy-line'>121:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">render</span><span style="color: #D24; font-weight: bold">(\</span><span style="color: #000">Throwable $exception</span><span style="color: #D24; font-weight: bold">): </span><span style="color: #000">void
+<span class='tracy-line'>122:</span>        </span><span style="color: #D24; font-weight: bold">{
+<span class='tracy-line'>123:</span>            if (!</span><span style="color: #000">headers_sent</span><span style="color: #D24; font-weight: bold">()) {
+<span class='tracy-line'>124:</span>                </span><span style="color: #000">header</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Content-Type: text/html; charset=UTF-8'</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>125:</span>            }
+<span class='tracy-line'>126:</span>    
+<span class='tracy-line-highlight'>127:            $this-&gt;renderTemplate($exception, __DIR__ . '/assets/page.phtml');
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='tracy-line'>128:</span>        }
+<span class='tracy-line'>129:</span>    
+<span class='tracy-line'>130:</span>    
+<span class='tracy-line'>131:</span>        </span><span style="color: #998; font-style: italic">/** @internal */
+</span></span></code></div></pre>
+
+			<table class="tracy-callstack-args">
+<tr><th>$exception</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"ref":145}'></pre>
+</td></tr>
+<tr><th>$template</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="79 characters"><span>'</span>/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/assets/page.phtml<span>'</span></span></pre>
+</td></tr>
+			</table>
+		</div>
+
+		<div class="tracy-callstack-file">
+			<a href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FDebugger%2FDevelopmentStrategy.php&amp;line=49&amp;search=&amp;replace=" title="/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/Debugger/DevelopmentStrategy.php:49" class="tracy-editor">.../tracy/tracy/src/Tracy/Debugger/<b>DevelopmentStrategy.php</b>:49</a>
+		</div>
+
+		<div class="tracy-callstack-callee">
+			<a href="#" data-tracy-ref="^div + div" class="tracy-toggle tracy-collapsed">Tracy\BlueScreen::<b>render</b> (...)</a>
+		</div>
+
+		<div class="tracy-callstack-additional tracy-collapsed">
+			<pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FDebugger%2FDevelopmentStrategy.php&amp;line=49&amp;search=&amp;replace=" class='tracy-code'><div><code><span style="color: #06B"><span style="color: #000"><span class='tracy-line'>39:</span>        </span><span style="color: #D24; font-weight: bold">{
+<span class='tracy-line'>40:</span>        }
+<span class='tracy-line'>41:</span>    
+<span class='tracy-line'>42:</span>    
+<span class='tracy-line'>43:</span>        public function </span><span style="color: #000">handleException</span><span style="color: #D24; font-weight: bold">(\</span><span style="color: #000">Throwable $exception</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">bool $firstTime</span><span style="color: #D24; font-weight: bold">): </span><span style="color: #000">void
+<span class='tracy-line'>44:</span>        </span><span style="color: #D24; font-weight: bold">{
+<span class='tracy-line'>45:</span>            if (</span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">isAjax</span><span style="color: #D24; font-weight: bold">() &amp;&amp; </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">defer</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isAvailable</span><span style="color: #D24; font-weight: bold">()) {
+<span class='tracy-line'>46:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">blueScreen</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">renderToAjax</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$exception</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">defer</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>47:</span>    
+<span class='tracy-line'>48:</span>            } elseif (</span><span style="color: #000">$firstTime </span><span style="color: #D24; font-weight: bold">&amp;&amp; </span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">isHtmlMode</span><span style="color: #D24; font-weight: bold">()) {
+<span class='tracy-line-highlight'>49:                $this-&gt;blueScreen-&gt;render($exception);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='tracy-line'>50:</span>    
+<span class='tracy-line'>51:</span>            } else {
+<span class='tracy-line'>52:</span>                </span><span style="color: #000">Debugger</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">fireLog</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$exception</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>53:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">renderExceptionCli</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$exception</span><span style="color: #D24; font-weight: bold">);
+</span></span></code></div></pre>
+
+			<table class="tracy-callstack-args">
+<tr><th>$exception</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"ref":145}'></pre>
+</td></tr>
+			</table>
+		</div>
+
+		<div class="tracy-callstack-file">
+			<a href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FDebugger%2FDebugger.php&amp;line=323&amp;search=&amp;replace=" title="/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/Debugger/Debugger.php:323" class="tracy-editor">.../vendor/tracy/tracy/src/Tracy/Debugger/<b>Debugger.php</b>:323</a>
+		</div>
+
+		<div class="tracy-callstack-callee">
+			<a href="#" data-tracy-ref="^div + div" class="tracy-toggle tracy-collapsed">Tracy\DevelopmentStrategy::<b>handleException</b> (...)</a>
+		</div>
+
+		<div class="tracy-callstack-additional tracy-collapsed">
+			<pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FDebugger%2FDebugger.php&amp;line=323&amp;search=&amp;replace=" class='tracy-code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='tracy-line'>313:</span>            </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$reserved </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">null</span><span style="color: #D24; font-weight: bold">;
+<span class='tracy-line'>314:</span>            </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$obStatus </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">ob_get_status</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">true</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>315:</span>    
+<span class='tracy-line'>316:</span>            if (!</span><span style="color: #000">headers_sent</span><span style="color: #D24; font-weight: bold">()) {
+<span class='tracy-line'>317:</span>                </span><span style="color: #000">http_response_code</span><span style="color: #D24; font-weight: bold">(isset(</span><span style="color: #000">$_SERVER</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'HTTP_USER_AGENT'</span><span style="color: #D24; font-weight: bold">]) &amp;&amp; </span><span style="color: #000">strpos</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$_SERVER</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'HTTP_USER_AGENT'</span><span style="color: #D24; font-weight: bold">], </span><span style="color: #080">'MSIE '</span><span style="color: #D24; font-weight: bold">) !== </span><span style="color: #000">false </span><span style="color: #D24; font-weight: bold">? </span><span style="color: #000">503 </span><span style="color: #D24; font-weight: bold">: </span><span style="color: #000">500</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>318:</span>            }
+<span class='tracy-line'>319:</span>    
+<span class='tracy-line'>320:</span>            </span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">improveException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$exception</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>321:</span>            </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">removeOutputBuffers</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">true</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>322:</span>    
+<span class='tracy-line-highlight'>323:            self::getStrategy()-&gt;handleException($exception, $firstTime);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='tracy-line'>324:</span>    
+<span class='tracy-line'>325:</span>            try {
+<span class='tracy-line'>326:</span>                foreach (</span><span style="color: #000">$firstTime </span><span style="color: #D24; font-weight: bold">? </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$onFatalError </span><span style="color: #D24; font-weight: bold">: [] as </span><span style="color: #000">$handler</span><span style="color: #D24; font-weight: bold">) {
+<span class='tracy-line'>327:</span>                    </span><span style="color: #000">$handler</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$exception</span><span style="color: #D24; font-weight: bold">);
+</span></span></code></div></pre>
+
+			<table class="tracy-callstack-args">
+<tr><th>$exception</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"ref":145}'></pre>
+</td></tr>
+<tr><th>$firstTime</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-bool">true</span></pre>
+</td></tr>
+			</table>
+		</div>
+
+		<div class="tracy-callstack-file">
+			<a href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FDebugger%2FDebugger.php&amp;line=225&amp;search=&amp;replace=" title="/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/Debugger/Debugger.php:225" class="tracy-editor">.../vendor/tracy/tracy/src/Tracy/Debugger/<b>Debugger.php</b>:225</a>
+		</div>
+
+		<div class="tracy-callstack-callee">
+			<a href="#" data-tracy-ref="^div + div" class="tracy-toggle tracy-collapsed">Tracy\Debugger::<b>exceptionHandler</b> (...)</a>
+		</div>
+
+		<div class="tracy-callstack-additional tracy-collapsed">
+			<pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftracy%2Ftracy%2Fsrc%2FTracy%2FDebugger%2FDebugger.php&amp;line=225&amp;search=&amp;replace=" class='tracy-code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='tracy-line'>215:</span>            </span><span style="color: #000">$strategy </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getStrategy</span><span style="color: #D24; font-weight: bold">();
+<span class='tracy-line'>216:</span>            </span><span style="color: #000">$strategy</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">initialize</span><span style="color: #D24; font-weight: bold">();
+<span class='tracy-line'>217:</span>            </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">dispatch</span><span style="color: #D24; font-weight: bold">();
+<span class='tracy-line'>218:</span>    
+<span class='tracy-line'>219:</span>            if (</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$enabled</span><span style="color: #D24; font-weight: bold">) {
+<span class='tracy-line'>220:</span>                return;
+<span class='tracy-line'>221:</span>            }
+<span class='tracy-line'>222:</span>    
+<span class='tracy-line'>223:</span>            </span><span style="color: #000">register_shutdown_function</span><span style="color: #D24; font-weight: bold">([</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::class, </span><span style="color: #080">'shutdownHandler'</span><span style="color: #D24; font-weight: bold">]);
+<span class='tracy-line'>224:</span>            </span><span style="color: #000">set_exception_handler</span><span style="color: #D24; font-weight: bold">(function (\</span><span style="color: #000">Throwable $e</span><span style="color: #D24; font-weight: bold">) {
+<span class='tracy-line-highlight'>225:                self::exceptionHandler($e);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='tracy-line'>226:</span>                exit(</span><span style="color: #000">255</span><span style="color: #D24; font-weight: bold">);
+<span class='tracy-line'>227:</span>            });
+<span class='tracy-line'>228:</span>            </span><span style="color: #000">set_error_handler</span><span style="color: #D24; font-weight: bold">([</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::class, </span><span style="color: #080">'errorHandler'</span><span style="color: #D24; font-weight: bold">]);
+<span class='tracy-line'>229:</span>    
+</span></span></code></div></pre>
+
+			<table class="tracy-callstack-args">
+<tr><th>$exception</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"ref":145}'></pre>
+</td></tr>
+			</table>
+		</div>
+
+		<div class="tracy-callstack-file">
+			<i>inner-code</i>
+		</div>
+
+		<div class="tracy-callstack-callee">
+			<a href="#" data-tracy-ref="^div + div" class="tracy-toggle tracy-collapsed">Tracy\Debugger::<b>Tracy\{closure}</b> (...)</a>
+		</div>
+
+		<div class="tracy-callstack-additional tracy-collapsed">
+
+
+			<table class="tracy-callstack-args">
+<tr><th>#0</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"ref":145}'></pre>
+</td></tr>
+			</table>
+		</div>
+	</div>
+	</div>
+</section>
+
+<section class="tracy-section">
+	<h2 class="tracy-section-label"><a href="#" data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Variables</a></h2>
+
+	<div class="tracy-section-panel tracy-collapsed">
+		<div class="tracy-pane">
+			<table class="tracy-sortable">
+				<tr><th>ex</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"ref":145}'></pre>
+</td></tr>
+				<tr><th>actions</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-array">array</span> (0)</pre>
+</td></tr>
+				<tr><th>m</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='[[0," \"/admin.html.twig\""],[1,"\""],[2,"/admin.html.twig"]]'></pre>
+</td></tr>
+				<tr><th>file</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="16 characters"><span>'</span>/admin.html.twig<span>'</span></span></pre>
+</td></tr>
+			</table>
+		</div>
+	</div>
+</section>
+
+<section class="tracy-section">
+	<h2 class="tracy-section-label"><a href="#" data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Exception</a></h2>
+	<div class="tracy-section-panel tracy-collapsed">
+		<pre class="tracy-dump tracy-light" data-tracy-dump='{"ref":135}'></pre>
+	</div>
+</section>
+
+
+
+
+<section class="tracy-section">
+	<h2 class="tracy-section-label"><a href="#" data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Environment</a></h2>
+
+	<div class="tracy-section-panel tracy-collapsed">
+
+	<div class="tracy-tabs">
+		<ul class="tracy-tab-bar">
+			<li class="tracy-tab-label tracy-active"><a href="#">$_SERVER</a></li>
+			<li class="tracy-tab-label"><a href="#">$_SESSION</a></li>
+			<li class="tracy-tab-label"><a href="#">Constants</a></li>
+			<li class="tracy-tab-label"><a href="#">Configuration</a></li>
+			<li class="tracy-tab-label"><a href="#">Output buffers</a></li>
+
+		</ul>
+
+
+		<div>
+			<div class="tracy-tab-panel tracy-pane tracy-active">
+				<table class="tracy-sortable">
+				<tr><th>USER</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="6 characters"><span>'</span>WinYum<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HOME</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="12 characters"><span>'</span>/home/WinYum<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SCRIPT_NAME</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="10 characters"><span>'</span>/index.php<span>'</span></span></pre>
+</td></tr>
+				<tr><th>REQUEST_URI</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="6 characters"><span>'</span>/admin<span>'</span></span></pre>
+</td></tr>
+				<tr><th>QUERY_STRING</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+				<tr><th>REQUEST_METHOD</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>GET<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SERVER_PROTOCOL</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="8 characters"><span>'</span>HTTP/2.0<span>'</span></span></pre>
+</td></tr>
+				<tr><th>GATEWAY_INTERFACE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="7 characters"><span>'</span>CGI/1.1<span>'</span></span></pre>
+</td></tr>
+				<tr><th>REMOTE_PORT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>12928<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SCRIPT_FILENAME</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="38 characters"><span>'</span>/appdata/sites/WinYum/public/index.php<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SERVER_ADMIN</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="18 characters"><span>'</span>db.sai@chuliege.be<span>'</span></span></pre>
+</td></tr>
+				<tr><th>CONTEXT_DOCUMENT_ROOT</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="28 characters"><span>'</span>/appdata/sites/WinYum/public<span>'</span></span></pre>
+</td></tr>
+				<tr><th>CONTEXT_PREFIX</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+				<tr><th>REQUEST_SCHEME</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>https<span>'</span></span></pre>
+</td></tr>
+				<tr><th>DOCUMENT_ROOT</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="28 characters"><span>'</span>/appdata/sites/WinYum/public<span>'</span></span></pre>
+</td></tr>
+				<tr><th>REMOTE_ADDR</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="9 characters"><span>'</span>10.0.2.15<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SERVER_PORT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>443<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SERVER_ADDR</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="9 characters"><span>'</span>10.0.2.15<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SERVER_NAME</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="22 characters"><span>'</span>winyumwebdev.ext.chulg<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SERVER_SOFTWARE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="6 characters"><span>'</span>Apache<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SERVER_SIGNATURE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+				<tr><th>PATH</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="49 characters"><span>'</span>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_X_FORWARDED_PROTO</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>https<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_X_FORWARDED_PORT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>443<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_HOST</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="22 characters"><span>'</span>winyumwebdev.ext.chulg<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_TE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="8 characters"><span>'</span>trailers<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_CACHE_CONTROL</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="9 characters"><span>'</span>max-age=0<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_SEC_FETCH_USER</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="2 characters"><span>'</span>?1<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_SEC_FETCH_SITE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="4 characters"><span>'</span>none<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_SEC_FETCH_MODE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="8 characters"><span>'</span>navigate<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_SEC_FETCH_DEST</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="8 characters"><span>'</span>document<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_UPGRADE_INSECURE_REQUESTS</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span>1<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_COOKIE</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="82 characters"><span>'</span>tracy-session=d3ea6eacc0; test=nel; WinYum_SESSID=CkfAgG7IvQj4xN0lE1JzRVHP9TUY5Q5P<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_ACCEPT_ENCODING</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="17 characters"><span>'</span>gzip, deflate, br<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_ACCEPT_LANGUAGE</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="14 characters"><span>'</span>en-US,en;q=0.5<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_ACCEPT</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="74 characters"><span>'</span>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP_USER_AGENT</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="68 characters"><span>'</span>Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SESSION_RESUMED</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="7 characters"><span>'</span>Resumed<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SESSION_ID</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="64 characters"><span>'</span>8893d84ed10ac5424b11d4b36fb1c4a49fc0b753b8b0c69db8d7aaed895b840f<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_A_SIG</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="23 characters"><span>'</span>sha256WithRSAEncryption<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_A_KEY</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="13 characters"><span>'</span>rsaEncryption<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_I_DN</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="68 characters"><span>'</span>L=LIEGE,ST=LIEGE,C=BE,O=CHU LIEGE,CN=winyumwebdev.ext.chulg.st.chulg<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_S_DN</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="68 characters"><span>'</span>L=LIEGE,ST=LIEGE,C=BE,O=CHU LIEGE,CN=winyumwebdev.ext.chulg.st.chulg<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_V_END</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="24 characters"><span>'</span>May 22 13:46:51 2024 GMT<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_V_START</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="24 characters"><span>'</span>May 23 13:46:51 2022 GMT<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_M_SERIAL</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="40 characters"><span>'</span>28D797A9A37442496F8A514779E7F02953250C7B<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_M_VERSION</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span>3<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_CLIENT_VERIFY</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="4 characters"><span>'</span>NONE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_CIPHER_ALGKEYSIZE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>256<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_CIPHER_USEKEYSIZE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>256<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_CIPHER_EXPORT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>false<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_CIPHER</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="22 characters"><span>'</span>TLS_AES_256_GCM_SHA384<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_COMPRESS_METHOD</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="4 characters"><span>'</span>NULL<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SECURE_RENEG</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>false<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_PROTOCOL</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="7 characters"><span>'</span>TLSv1.3<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_VERSION_LIBRARY</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="14 characters"><span>'</span>OpenSSL/1.1.1k<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_VERSION_INTERFACE</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="14 characters"><span>'</span>mod_ssl/2.4.37<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_I_DN_L</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>LIEGE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_I_DN_ST</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>LIEGE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_I_DN_C</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="2 characters"><span>'</span>BE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_I_DN_O</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="9 characters"><span>'</span>CHU LIEGE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_I_DN_CN</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="31 characters"><span>'</span>winyumwebdev.ext.chulg.st.chulg<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_S_DN_L</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>LIEGE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_S_DN_ST</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>LIEGE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_S_DN_C</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="2 characters"><span>'</span>BE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_S_DN_O</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="9 characters"><span>'</span>CHU LIEGE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_SERVER_S_DN_CN</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="31 characters"><span>'</span>winyumwebdev.ext.chulg.st.chulg<span>'</span></span></pre>
+</td></tr>
+				<tr><th>H2_STREAM_TAG</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>000<span>'</span></span></pre>
+</td></tr>
+				<tr><th>H2_STREAM_ID</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+				<tr><th>H2_PUSHED_ON</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+				<tr><th>H2_PUSHED</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+				<tr><th>H2_PUSH</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="2 characters"><span>'</span>on<span>'</span></span></pre>
+</td></tr>
+				<tr><th>H2PUSH</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="2 characters"><span>'</span>on<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTP2</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="2 characters"><span>'</span>on<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SSL_TLS_SNI</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="22 characters"><span>'</span>winyumwebdev.ext.chulg<span>'</span></span></pre>
+</td></tr>
+				<tr><th>HTTPS</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="2 characters"><span>'</span>on<span>'</span></span></pre>
+</td></tr>
+				<tr><th>APP_NAME</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="6 characters"><span>'</span>WinYum<span>'</span></span></pre>
+</td></tr>
+				<tr><th>APPLICATION_ENV</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="11 characters"><span>'</span>Development<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SCRIPT_URI</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="36 characters"><span>'</span>https://winyumwebdev.ext.chulg/admin<span>'</span></span></pre>
+</td></tr>
+				<tr><th>SCRIPT_URL</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="6 characters"><span>'</span>/admin<span>'</span></span></pre>
+</td></tr>
+				<tr><th>UNIQUE_ID</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="27 characters"><span>'</span>YrrPw-cS67QeBeHjuoQ2SgAA2AE<span>'</span></span></pre>
+</td></tr>
+				<tr><th>FCGI_ROLE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="9 characters"><span>'</span>RESPONDER<span>'</span></span></pre>
+</td></tr>
+				<tr><th>PHP_SELF</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="10 characters"><span>'</span>/index.php<span>'</span></span></pre>
+</td></tr>
+				<tr><th>REQUEST_TIME_FLOAT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-number">1656410051.652556</span></pre>
+</td></tr>
+				<tr><th>REQUEST_TIME</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-number">1656410051</span></pre>
+</td></tr>
+				<tr><th>ENVIRONMENT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="11 characters"><span>'</span>Development<span>'</span></span></pre>
+</td></tr>
+				<tr><th>APP_ENVIRONMENT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="11 characters"><span>'</span>Development<span>'</span></span></pre>
+</td></tr>
+				</table>
+			</div>
+
+
+			<div class="tracy-tab-panel">
+				<div class="tracy-pane">
+					<table class="tracy-sortable">
+						<tr><th>_sf2_attributes</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='[["login",{"string":"fc0355917df796fae3c9ed7598de0e113d6252a9d38097b96a926fe498b6c8172d62be6864fd1504318983bddea4a3bf5395466a99ac5cdd8d9b5fd4376baf5862130d486c196d6a0c0f39 <span>…</span> faa9c2d4dd","length":512}],["userId","806b6c67-ceb8-4187-84af-7ad3e8d36236"],["nickname","nel"],["registration",{"string":"9ba903a5d3e97e2ad11433a5f5dbb758d5f4b3bba6c7701184efc515b78c1c936b86129b8b1a74ad0939386e63593d6e8cd5e72ef2ae7e84a562c1d09530d0b44f9699f34a4cf769184247 <span>…</span> b12d6cc0e6","length":512}]]'></pre>
+</td></tr>
+						<tr><th>_symfony_flashes</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-array">array</span> (0)</pre>
+</td></tr>
+						<tr><th>_sf2_meta</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='[["u",1656410051],["c",1656397669],["l",14400]]'></pre>
+</td></tr>
+					</table>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="tracy-tab-panel tracy-pane">
+				<table class="tracy-sortable">
+					<tr><th>ROOT_DIR</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="21 characters"><span>'</span>/appdata/sites/WinYum<span>'</span></span></pre>
+</td></tr>
+					<tr><th>FILTER_VALIDATE_BOOL</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-number">258</span></pre>
+</td></tr>
+				</table>
+			</div>
+
+
+			<div class="tracy-tab-panel">
+				<pre class="tracy-dump tracy-light"></pre>
+			</div>
+
+
+			<div class="tracy-tab-panel tracy-pane">
+				<pre class="tracy-dump tracy-light"
+><span class="tracy-toggle"><span class="tracy-dump-array">array</span> (1)</span>
+<div><span class="tracy-dump-indent">   </span><span class="tracy-dump-number">0</span> => <span class="tracy-toggle"><span class="tracy-dump-array">array</span> (7)</span>
+<div><span class="tracy-dump-indent">   |  </span><span class="tracy-dump-string"><span class='tracy-dump-lq'>'</span>name<span>'</span></span> => <span class="tracy-dump-string" title="22 characters"><span>'</span>default output handler<span>'</span></span>
+<span class="tracy-dump-indent">   |  </span><span class="tracy-dump-string"><span class='tracy-dump-lq'>'</span>type<span>'</span></span> => <span class="tracy-dump-number">0</span>
+<span class="tracy-dump-indent">   |  </span><span class="tracy-dump-string"><span class='tracy-dump-lq'>'</span>flags<span>'</span></span> => <span class="tracy-dump-number">112</span>
+<span class="tracy-dump-indent">   |  </span><span class="tracy-dump-string"><span class='tracy-dump-lq'>'</span>level<span>'</span></span> => <span class="tracy-dump-number">0</span>
+<span class="tracy-dump-indent">   |  </span><span class="tracy-dump-string"><span class='tracy-dump-lq'>'</span>chunk_size<span>'</span></span> => <span class="tracy-dump-number">4096</span>
+<span class="tracy-dump-indent">   |  </span><span class="tracy-dump-string"><span class='tracy-dump-lq'>'</span>buffer_size<span>'</span></span> => <span class="tracy-dump-number">8192</span>
+<span class="tracy-dump-indent">   |  </span><span class="tracy-dump-string"><span class='tracy-dump-lq'>'</span>buffer_used<span>'</span></span> => <span class="tracy-dump-number">56</span>
+</div></div></pre>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+<section class="tracy-section">
+	<h2 class="tracy-section-label"><a href="#" data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">HTTP</a></h2>
+
+	<div class="tracy-section-panel tracy-collapsed">
+
+	<div class="tracy-tabs">
+		<ul class="tracy-tab-bar">
+			<li class="tracy-tab-label tracy-active"><a href="#">Request</a></li>
+			<li class="tracy-tab-label"><a href="#">Response</a></li>
+		</ul>
+
+		<div>
+
+			<div class="tracy-tab-panel tracy-active">
+			<h3>GET <a href="https://winyumwebdev.ext.chulg/admin" target="_blank" rel="noreferrer noopener" style="font-weight: normal">https://winyumwebdev.ext.chulg/admin</a></h3>
+
+			<div class="tracy-pane">
+				<table class="tracy-sortable">
+					<tr><th>X-Forwarded-Proto</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>https<span>'</span></span></pre>
+</td></tr>
+					<tr><th>X-Forwarded-Port</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>443<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Host</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="22 characters"><span>'</span>winyumwebdev.ext.chulg<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Te</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="8 characters"><span>'</span>trailers<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Cache-Control</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="9 characters"><span>'</span>max-age=0<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Sec-Fetch-User</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="2 characters"><span>'</span>?1<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Sec-Fetch-Site</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="4 characters"><span>'</span>none<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Sec-Fetch-Mode</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="8 characters"><span>'</span>navigate<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Sec-Fetch-Dest</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="8 characters"><span>'</span>document<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Upgrade-Insecure-Requests</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span>1<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Cookie</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="82 characters"><span>'</span>tracy-session=d3ea6eacc0; test=nel; WinYum_SESSID=CkfAgG7IvQj4xN0lE1JzRVHP9TUY5Q5P<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Accept-Encoding</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="17 characters"><span>'</span>gzip, deflate, br<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Accept-Language</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="14 characters"><span>'</span>en-US,en;q=0.5<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Accept</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="74 characters"><span>'</span>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8<span>'</span></span></pre>
+</td></tr>
+					<tr><th>User-Agent</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="68 characters"><span>'</span>Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0<span>'</span></span></pre>
+</td></tr>
+				</table>
+			</div>
+
+
+			<h3>$_GET</h3>
+			<p><i>empty</i></p>
+			<h3>$_POST</h3>
+			<p><i>empty</i></p>
+			<h3>$_COOKIE</h3>
+			<div class="tracy-pane">
+				<table class="tracy-sortable">
+					<tr><th>tracy-session</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="10 characters"><span>'</span>d3ea6eacc0<span>'</span></span></pre>
+</td></tr>
+					<tr><th>test</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>nel<span>'</span></span></pre>
+</td></tr>
+					<tr><th>WinYum_SESSID</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="32 characters"><span>'</span>CkfAgG7IvQj4xN0lE1JzRVHP9TUY5Q5P<span>'</span></span></pre>
+</td></tr>
+				</table>
+			</div>
+			</div>
+
+
+			<div class="tracy-tab-panel">
+			<h3>Code: 500</h3>
+			<div class="tracy-pane">
+				<table class="tracy-sortable">
+					<tr><th>Cache-Control</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="35 characters"><span>'</span>max-age=0, private, must-revalidate<span>'</span></span></pre>
+</td></tr>
+					<tr><th>Content-Type</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="24 characters"><span>'</span>text/html; charset=UTF-8<span>'</span></span></pre>
+</td></tr>
+				</table>
+			</div>
+
+
+			<p>Headers were not sent at the time the exception was thrown</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+		<footer>
+			<ul>
+				<li><b><a href="https://github.com/sponsors/dg" target="_blank" rel="noreferrer noopener">Please support Tracy via a donation 💙️</a></b></li>
+				<li>Report generated at 2022/06/28 11:54:11</li>
+				<li>PHP 7.4.29</li><li>Apache</li><li>Tracy 2.9.3</li>			</ul>
+			<div class="tracy-footer-logo"><a href="https://tracy.nette.org" rel="noreferrer"></a></div>
+		</footer>
+	</div>
+	<meta itemprop=tracy-snapshot content='{"145":{"object":"Twig\\Error\\LoaderError","editor":{"file":"/appdata/sites/WinYum/vendor/twig/twig/src/Error/LoaderError.php","line":19,"url":"editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Ftwig%2Ftwig%2Fsrc%2FError%2FLoaderError.php\u0026line=19\u0026search=\u0026replace="},"items":[["lineno",-1,"Twig\\Error\\Error"],["name",null,"Twig\\Error\\Error"],["rawMessage","Unable to find template \"/admin.html.twig\" (looked into: /appdata/sites/WinYum/templates).","Twig\\Error\\Error"],["sourcePath",null,"Twig\\Error\\Error"],["sourceCode",null,"Twig\\Error\\Error"],["message","Unable to find template \"/admin.html.twig\" (looked into: /appdata/sites/WinYum/templates).",1],["string","","Exception"],["code",0,1],["file","/appdata/sites/WinYum/vendor/twig/twig/src/Loader/FilesystemLoader.php",1],["line",227,1],["trace",[[0,[["file","/appdata/sites/WinYum/vendor/twig/twig/src/Loader/FilesystemLoader.php"],["line",131],["function","findTemplate"],["class","Twig\\Loader\\FilesystemLoader"],["type","->"],["args",[[0,"/admin.html.twig"]]]]],[1,[["file","/appdata/sites/WinYum/vendor/twig/twig/src/Environment.php"],["line",261],["function","getCacheKey"],["class","Twig\\Loader\\FilesystemLoader"],["type","->"],["args",[[0,"/admin.html.twig"]]]]],[2,[["file","/appdata/sites/WinYum/vendor/twig/twig/src/Environment.php"],["line",309],["function","getTemplateClass"],["class","Twig\\Environment"],["type","->"],["args",[[0,"/admin.html.twig"]]]]],[3,[["file","/appdata/sites/WinYum/vendor/twig/twig/src/Environment.php"],["line",277],["function","load"],["class","Twig\\Environment"],["type","->"],["args",[[0,"/admin.html.twig"]]]]],[4,[["file","/appdata/sites/WinYum/src/Framework/Rendering/TwigTemplateRenderer.php"],["line",18],["function","render"],["class","Twig\\Environment"],["type","->"],["args",[[0,"/admin.html.twig"],[1,{"array":null,"length":1}]]]]],[5,[["file","/appdata/sites/WinYum/src/Admin/Presentation/AdminController.php"],["line",45],["function","render"],["class","WinYum\\Framework\\Rendering\\TwigTemplateRenderer"],["type","->"],["args",[[0,"/admin.html.twig"],[1,{"array":null,"length":1}]]]]],[6,[["file","/appdata/sites/WinYum/src/Bootstrap.php"],["line",62],["function","show"],["class","WinYum\\Admin\\Presentation\\AdminController"],["type","->"],["args",[[0,{"ref":37}],[1,[]]]]]],[7,[["file","/appdata/sites/WinYum/public/index.php"],["line",8],["args",[[0,"/appdata/sites/WinYum/src/Bootstrap.php"]]],["function","require"]]]],"Exception"],["previous",null,"Exception"]]},"37":{"object":"Symfony\\Component\\HttpFoundation\\Request","editor":{"file":"/appdata/sites/WinYum/vendor/symfony/http-foundation/Request.php","line":42,"url":"editor://open/?file=%2Fappdata%2Fsites%2FWinYum%2Fvendor%2Fsymfony%2Fhttp-foundation%2FRequest.php\u0026line=42\u0026search=\u0026replace="}},"135":{"object":"ErrorException","items":[["context",[["ex",{"ref":145}],["actions",[]],["m",[[0," \"/admin.html.twig\""],[1,"\""],[2,"/admin.html.twig"]]],["file","/admin.html.twig"]],3],["skippable",true,3],["severity",2,1],["message","is_file(): open_basedir restriction in effect. File(/admin.html.twig) is not within the allowed path(s): (/appdata/sites/WinYum:/appdata/runtime/WinYum)",1],["string","","Exception"],["code",0,1],["file","/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php",1],["line",273,1],["trace",[[0,[["file","/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/Debugger/Debugger.php"],["line",380],["function","handleError"],["class","Tracy\\DevelopmentStrategy"],["type","->"],["args",[[0,2],[1,"is_file(): open_basedir restriction in effect. File(/admin.html.twig) is not within the allowed path(s): (/appdata/sites/WinYum:/appdata/runtime/WinYum)"],[2,"/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php"],[3,273],[4,[["ex",{"ref":145}],["actions",[]],["m",{"array":null,"length":3}],["file","/admin.html.twig"]]]]]]],[1,[["function","errorHandler"],["class","Tracy\\Debugger"],["type","::"],["args",[[0,2],[1,"is_file(): open_basedir restriction in effect. File(/admin.html.twig) is not within the allowed path(s): (/appdata/sites/WinYum:/appdata/runtime/WinYum)"],[2,"/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php"],[3,273],[4,[["ex",{"ref":145}],["actions",[]],["m",{"array":null,"length":3}],["file","/admin.html.twig"]]]]]]],[2,[["file","/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php"],["line",273],["function","is_file"],["args",[[0,"/admin.html.twig"]]]]],[3,[["file","/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php"],["line",196],["function","renderActions"],["class","Tracy\\BlueScreen"],["type","->"],["args",[[0,{"ref":145}]]]]],[4,[["file","/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php"],["line",127],["function","renderTemplate"],["class","Tracy\\BlueScreen"],["type","->"],["args",[[0,{"ref":145}],[1,"/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/BlueScreen/assets/page.phtml"]]]]],[5,[["file","/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/Debugger/DevelopmentStrategy.php"],["line",49],["function","render"],["class","Tracy\\BlueScreen"],["type","->"],["args",[[0,{"ref":145}]]]]],[6,[["file","/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/Debugger/Debugger.php"],["line",323],["function","handleException"],["class","Tracy\\DevelopmentStrategy"],["type","->"],["args",[[0,{"ref":145}],[1,true]]]]],[7,[["file","/appdata/sites/WinYum/vendor/tracy/tracy/src/Tracy/Debugger/Debugger.php"],["line",225],["function","exceptionHandler"],["class","Tracy\\Debugger"],["type","::"],["args",[[0,{"ref":145}]]]]],[8,[["function","Tracy\\{closure}"],["class","Tracy\\Debugger"],["type","::"],["args",[[0,{"ref":145}]]]]]],"Exception"],["previous",null,"Exception"]]}}'>
+</tracy-div>
+
+<script>
+'use strict';
+(function(){const MOVE_THRESHOLD=100;class Toggle{static init(){let start;document.documentElement.addEventListener('mousedown',(e)=>{start=[e.clientX,e.clientY];});document.documentElement.addEventListener('click',(e)=>{let el;if(!e.shiftKey&&!e.ctrlKey&&!e.metaKey&&(el=e.target.closest('.tracy-toggle'))&&Math.pow(start[0]-e.clientX,2)+Math.pow(start[1]-e.clientY,2)<MOVE_THRESHOLD){Toggle.toggle(el,undefined,e);e.preventDefault();e.stopImmediatePropagation();}});Toggle.init=function(){};}static toggle(el,expand,e){let collapsed=el.classList.contains('tracy-collapsed'),ref=el.getAttribute('data-tracy-ref')||el.getAttribute('href',2),dest=el;if(typeof expand==='undefined'){expand=collapsed;}if(!ref||ref==='#'){ref='+';}else if(ref.substr(0,1)==='#'){dest=document;}ref=ref.match(/(\^\s*([^+\s]*)\s*)?(\+\s*(\S*)\s*)?(.*)/);dest=ref[1]?dest.parentNode:dest;dest=ref[2]?dest.closest(ref[2]):dest;dest=ref[3]?Toggle.nextElement(dest.nextElementSibling,ref[4]):dest;dest=ref[5]?dest.querySelector(ref[5]):dest;el.classList.toggle('tracy-collapsed',!expand);dest.classList.toggle('tracy-collapsed',!expand);el.dispatchEvent(new CustomEvent('tracy-toggle',{bubbles:true,detail:{relatedTarget:dest,collapsed:!expand,originalEvent:e}}));}static persist(baseEl,restore){let saved=[];baseEl.addEventListener('tracy-toggle',(e)=>{if(saved.indexOf(e.target)<0){saved.push(e.target);}});let toggles=JSON.parse(sessionStorage.getItem('tracy-toggles-'+baseEl.id));if(toggles&&restore!==false){toggles.forEach((item)=>{let el=baseEl;for(let i in item.path){if(!(el=el.children[item.path[i]])){return;}}if(el.textContent===item.text){Toggle.toggle(el,item.expand);}});}window.addEventListener('unload',()=>{toggles=saved.map((el)=>{let item={path:[],text:el.textContent,expand:!el.classList.contains('tracy-collapsed')};do{item.path.unshift(Array.from(el.parentNode.children).indexOf(el));el=el.parentNode;}while(el&&el!==baseEl);return item;});sessionStorage.setItem('tracy-toggles-'+baseEl.id,JSON.stringify(toggles));});}static nextElement(el,selector){while(el&&selector&&!el.matches(selector)){el=el.nextElementSibling;}return el;}}let Tracy=window.Tracy=window.Tracy||{};Tracy.Toggle=Tracy.Toggle||Toggle;})();(function(){class TableSort{static init(){document.documentElement.addEventListener('click',(e)=>{if(e.target.matches('.tracy-sortable > :first-child > tr:first-child *')){TableSort.sort(e.target.closest('td,th'));}});TableSort.init=function(){};}static sort(tcell){let tbody=tcell.closest('table').tBodies[0];let preserveFirst=!tcell.closest('thead')&&!tcell.parentNode.querySelectorAll('td').length;let asc=!(tbody.tracyAsc===tcell.cellIndex);tbody.tracyAsc=asc?tcell.cellIndex:null;let getText=(cell)=>{return cell?(cell.getAttribute('data-order')||cell.innerText):'';};Array.from(tbody.children).slice(preserveFirst?1:0).sort((a,b)=>{return function(v1,v2){return v1!==''&&v2!==''&&!isNaN(v1)&&!isNaN(v2)?v1-v2:v1.toString().localeCompare(v2);}(getText((asc?a:b).children[tcell.cellIndex]),getText((asc?b:a).children[tcell.cellIndex]));}).forEach((tr)=>{tbody.appendChild(tr);});}}let Tracy=window.Tracy=window.Tracy||{};Tracy.TableSort=Tracy.TableSort||TableSort;})();(function(){class Tabs{static init(){document.documentElement.addEventListener('click',(e)=>{let label,context;if(!e.shiftKey&&!e.ctrlKey&&!e.metaKey&&(label=e.target.closest('.tracy-tab-label'))&&(context=e.target.closest('.tracy-tabs'))){Tabs.toggle(context,label);e.preventDefault();e.stopImmediatePropagation();}});Tabs.init=function(){};}static toggle(context,label){let labels=context.querySelector('.tracy-tab-label').parentNode.querySelectorAll('.tracy-tab-label'),panels=context.querySelector('.tracy-tab-panel').parentNode.querySelectorAll(':scope > .tracy-tab-panel');for(let i=0;i<labels.length;i++){labels[i].classList.toggle('tracy-active',labels[i]===label);}for(let i=0;i<panels.length;i++){panels[i].classList.toggle('tracy-active',labels[i]===label);}}}let Tracy=window.Tracy=window.Tracy||{};Tracy.Tabs=Tracy.Tabs||Tabs;})();(function(){const COLLAPSE_COUNT=7,COLLAPSE_COUNT_TOP=14,TYPE_ARRAY='a',TYPE_OBJECT='o',TYPE_RESOURCE='r',PROP_VIRTUAL=4,PROP_PRIVATE=2;const HINT_CTRL='Ctrl-Click to open in editor',HINT_ALT='Alt-Click to expand/collapse all child nodes';class Dumper{static init(context){(context||document).querySelectorAll('[data-tracy-snapshot][data-tracy-dump]').forEach((pre)=>{let snapshot=JSON.parse(pre.getAttribute('data-tracy-snapshot'));pre.removeAttribute('data-tracy-snapshot');pre.appendChild(build(JSON.parse(pre.getAttribute('data-tracy-dump')),snapshot,pre.classList.contains('tracy-collapsed')));pre.removeAttribute('data-tracy-dump');pre.classList.remove('tracy-collapsed');});(context||document).querySelectorAll('meta[itemprop=tracy-snapshot]').forEach((meta)=>{let snapshot=JSON.parse(meta.getAttribute('content'));meta.parentElement.querySelectorAll('[data-tracy-dump]').forEach((pre)=>{if(pre.closest('[data-tracy-snapshot]')){return;}pre.appendChild(build(JSON.parse(pre.getAttribute('data-tracy-dump')),snapshot,pre.classList.contains('tracy-collapsed')));pre.removeAttribute('data-tracy-dump');pre.classList.remove('tracy-collapsed');});});if(Dumper.inited){return;}Dumper.inited=true;document.documentElement.addEventListener('click',(e)=>{let el;if(e.ctrlKey&&(el=e.target.closest('[data-tracy-href]'))){location.href=el.getAttribute('data-tracy-href');return false;}if((el=e.target.closest('[data-tracy-snapshot]'))){let snapshot=JSON.parse(el.getAttribute('data-tracy-snapshot'));el.removeAttribute('data-tracy-snapshot');el.querySelectorAll('[data-tracy-dump]').forEach((toggler)=>{if(!toggler.nextSibling){toggler.after(document.createTextNode('\n'));}toggler.nextSibling.after(buildStruct(JSON.parse(toggler.getAttribute('data-tracy-dump')),snapshot,toggler,true,[]));toggler.removeAttribute('data-tracy-dump');});}});document.documentElement.addEventListener('tracy-toggle',(e)=>{if(!e.target.matches('.tracy-dump *')){return;}let cont=e.detail.relatedTarget;let origE=e.detail.originalEvent;if(origE&&origE.usedIds){toggleChildren(cont,origE.usedIds);return;}else if(origE&&origE.altKey&&cont.querySelector('.tracy-toggle')){if(e.detail.collapsed){e.target.classList.toggle('tracy-collapsed',false);cont.classList.toggle('tracy-collapsed',false);e.detail.collapsed=false;}let expand=e.target.tracyAltExpand=!e.target.tracyAltExpand;toggleChildren(cont,expand?{}:false);}cont.classList.toggle('tracy-dump-flash',!e.detail.collapsed);});document.documentElement.addEventListener('animationend',(e)=>{if(e.animationName==='tracy-dump-flash'){e.target.classList.toggle('tracy-dump-flash',false);}});document.addEventListener('mouseover',(e)=>{if(!e.target.matches('.tracy-dump *')){return;}let el;if(e.target.matches('.tracy-dump-hash')&&(el=e.target.closest('.tracy-dump'))){el.querySelectorAll('.tracy-dump-hash').forEach((el)=>{if(el.textContent===e.target.textContent){el.classList.add('tracy-dump-highlight');}});return;}if((el=e.target.closest('.tracy-toggle'))&&!el.title){el.title=HINT_ALT;}});document.addEventListener('mouseout',(e)=>{if(e.target.matches('.tracy-dump-hash')){document.querySelectorAll('.tracy-dump-hash.tracy-dump-highlight').forEach((el)=>{el.classList.remove('tracy-dump-highlight');});}});Tracy.Toggle.init();}}function build(data,repository,collapsed,parentIds,keyType){let id,type=data===null?'null':typeof data,collapseCount=collapsed===null?COLLAPSE_COUNT:COLLAPSE_COUNT_TOP;if(type==='null'||type==='number'||type==='boolean'){return createEl(null,null,[createEl('span',{'class':'tracy-dump-'+type.replace('ean','')},[data+''])]);}else if(type==='string'){data={string:data.replace(/&/g,'&amp;').replace(/</g,'&lt;'),length:[...data].length};}else if(Array.isArray(data)){data={array:null,items:data};}else if(data.ref){id=data.ref;data=repository[id];if(!data){throw new UnknownEntityException;}}if(data.string!==undefined||data.bin!==undefined){let s=data.string===undefined?data.bin:data.string;if(keyType===TYPE_ARRAY){return createEl(null,null,[createEl('span',{'class':'tracy-dump-string'},{html:'<span class="tracy-dump-lq">\'<\/span>'+s+'<span>\'<\/span>'}),]);}else if(keyType!==undefined){if(type!=='string'){s='<span class="tracy-dump-lq">\'<\/span>'+s+'<span>\'<\/span>';}const classes=['tracy-dump-public','tracy-dump-protected','tracy-dump-private','tracy-dump-dynamic','tracy-dump-virtual',];return createEl(null,null,[createEl('span',{'class':classes[typeof keyType==='string'?PROP_PRIVATE:keyType],'title':typeof keyType==='string'?'declared in '+keyType:null,},{html:s}),]);}let count=(s.match(/\n/g)||[]).length;if(count){let collapsed=count>=COLLAPSE_COUNT;return createEl(null,null,[createEl('span',{'class':collapsed?'tracy-toggle tracy-collapsed':'tracy-toggle'},['string']),'\n',createEl('div',{'class':'tracy-dump-string'+(collapsed?' tracy-collapsed':''),'title':data.length+(data.bin?' bytes':' characters'),},{html:'<span class="tracy-dump-lq">\'<\/span>'+s+'<span>\'<\/span>'}),]);}return createEl(null,null,[createEl('span',{'class':'tracy-dump-string','title':data.length+(data.bin?' bytes':' characters'),},{html:'<span>\'<\/span>'+s+'<span>\'<\/span>'}),]);}else if(data.number){return createEl(null,null,[createEl('span',{'class':'tracy-dump-number'},[data.number])]);}else if(data.text!==undefined){return createEl(null,null,[createEl('span',{class:'tracy-dump-virtual'},[data.text])]);}else{let pos,nameEl;nameEl=data.object&&(pos=data.object.lastIndexOf('\\'))>0?[data.object.substr(0,pos+1),createEl('b',null,[data.object.substr(pos+1)])]:[data.object||data.resource];let span=data.array!==undefined?[createEl('span',{'class':'tracy-dump-array'},['array']),' ('+(data.length||data.items.length)+')']:[createEl('span',{'class':data.object?'tracy-dump-object':'tracy-dump-resource',title:data.editor?'Declared in file '+data.editor.file+' on line '+data.editor.line+(data.editor.url?'\n'+HINT_CTRL:'')+'\n'+HINT_ALT:null,'data-tracy-href':data.editor?data.editor.url:null},nameEl),...(id?[' ',createEl('span',{'class':'tracy-dump-hash'},[data.resource?'@'+id.substr(1):'#'+id])]:[])];parentIds=parentIds?parentIds.slice():[];let recursive=id&&parentIds.indexOf(id)>-1;parentIds.push(id);if(recursive||!data.items||!data.items.length){span.push(recursive?' RECURSION':(!data.items||data.items.length?' …':''));return createEl(null,null,span);}collapsed=collapsed===true||data.collapsed||(data.items&&data.items.length>=collapseCount);let toggle=createEl('span',{'class':collapsed?'tracy-toggle tracy-collapsed':'tracy-toggle'},span);return createEl(null,null,[toggle,'\n',buildStruct(data,repository,toggle,collapsed,parentIds),]);}}function buildStruct(data,repository,toggle,collapsed,parentIds){if(Array.isArray(data)){data={items:data};}else if(data.ref){parentIds=parentIds.slice();parentIds.push(data.ref);data=repository[data.ref];}let cut=data.items&&data.length>data.items.length;let type=data.object?TYPE_OBJECT:data.resource?TYPE_RESOURCE:TYPE_ARRAY;let div=createEl('div',{'class':collapsed?'tracy-collapsed':null});if(collapsed){let handler;toggle.addEventListener('tracy-toggle',handler=function(){toggle.removeEventListener('tracy-toggle',handler);createItems(div,data.items,type,repository,parentIds,null);if(cut){createEl(div,null,['…\n']);}});}else{createItems(div,data.items,type,repository,parentIds,true);if(cut){createEl(div,null,['…\n']);}}return div;}function createEl(el,attrs,content){if(!(el instanceof Node)){el=el?document.createElement(el):document.createDocumentFragment();}for(let id in attrs||{}){if(attrs[id]!==null){el.setAttribute(id,attrs[id]);}}if(content&&content.html!==undefined){el.innerHTML=content.html;return el;}content=content||[];el.append(...content.filter((child)=>(child!==null)));return el;}function createItems(el,items,type,repository,parentIds,collapsed){let key,val,vis,ref,i,tmp;for(i=0;i<items.length;i++){if(type===TYPE_ARRAY){[key,val,ref]=items[i];}else{[key,val,vis=PROP_VIRTUAL,ref]=items[i];}createEl(el,null,[build(key,null,null,null,type===TYPE_ARRAY?TYPE_ARRAY:vis),type===TYPE_ARRAY?' => ':': ',...(ref?[createEl('span',{'class':'tracy-dump-hash'},['&'+ref]),' ']:[]),tmp=build(val,repository,collapsed,parentIds),tmp.lastElementChild.tagName==='DIV'?'':'\n',]);}}function toggleChildren(cont,usedIds){let hashEl,id;cont.querySelectorAll(':scope > .tracy-toggle').forEach((el)=>{hashEl=(el.querySelector('.tracy-dump-hash')||el.previousElementSibling);id=hashEl&&hashEl.matches('.tracy-dump-hash')?hashEl.textContent:null;if(!usedIds||(id&&usedIds[id])){Tracy.Toggle.toggle(el,false);}else{usedIds[id]=true;Tracy.Toggle.toggle(el,true,{usedIds:usedIds});}});}function UnknownEntityException(){}let Tracy=window.Tracy=window.Tracy||{};Tracy.Dumper=Tracy.Dumper||Dumper;function init(){Tracy.Dumper.init();}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}})();(function(){class BlueScreen{static init(ajax){let blueScreen=document.getElementById('tracy-bs');if(navigator.platform.indexOf('Mac')>-1){blueScreen.classList.add('tracy-mac');}if(!ajax){document.body.appendChild(blueScreen);let id=location.href+document.querySelector('.tracy-section--error').textContent;Tracy.Toggle.persist(blueScreen,sessionStorage.getItem('tracy-toggles-bskey')===id);sessionStorage.setItem('tracy-toggles-bskey',id);}if(inited){return;}inited=true;document.addEventListener('keyup',(e)=>{if(e.keyCode===27&&!e.shiftKey&&!e.altKey&&!e.ctrlKey&&!e.metaKey){Tracy.Toggle.toggle(document.getElementById('tracy-bs-toggle'));}});blueScreen.addEventListener('tracy-toggle',(e)=>{if(!e.target.matches('.tracy-dump *')&&e.detail.originalEvent){e.detail.relatedTarget.classList.toggle('tracy-panel-fadein',!e.detail.collapsed);}});Tracy.TableSort.init();Tracy.Tabs.init();window.addEventListener('scroll',stickyFooter);(new ResizeObserver(stickyFooter)).observe(blueScreen);}static loadAjax(content){let ajaxBs=document.getElementById('tracy-bs');if(ajaxBs){ajaxBs.remove();}document.body.insertAdjacentHTML('beforeend',content);ajaxBs=document.getElementById('tracy-bs');Tracy.Dumper.init(ajaxBs);BlueScreen.init(true);window.scrollTo(0,0);}}function stickyFooter(){let footer=document.querySelector('#tracy-bs footer');footer.classList.toggle('tracy-footer--sticky',false);footer.classList.toggle('tracy-footer--sticky',footer.offsetHeight+footer.offsetTop-window.innerHeight-document.documentElement.scrollTop<0);}let inited;let Tracy=window.Tracy=window.Tracy||{};Tracy.BlueScreen=Tracy.BlueScreen||BlueScreen;})();Tracy.BlueScreen.init();
+</script>
+</body>
+</html>

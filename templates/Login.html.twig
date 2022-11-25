@@ -1,0 +1,31 @@
+{% extends 'Layout.html.twig' %}
+{% block style %}
+<link rel="stylesheet" href="css/login.css">
+{% endblock %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+    <div class="wrapper">
+        <div class="logo">
+            <img src="images/logo_chu-coul-petit.png" alt="LOGO">
+        </div>
+        <div class="text-center mt-4 name">
+            WinYUM
+        </div>
+        <form class="p-3 mt-3" method="post" action="">
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-user"></span>
+                <input type="text" name="nickname" id="nickname" placeholder="nickname">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <input type="hidden" name="token"
+                value="{{ get_token('login') }}"><br>
+            <button class="btn mt-3">Login</button>            
+        </form>
+    </div>
+{% endblock %}
